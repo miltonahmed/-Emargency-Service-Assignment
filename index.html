@@ -2,87 +2,87 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
 
   <!-- font awesome link  -->
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Google fonts  -->
   <link
     href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <style type="text/tailwindcss">
     @theme {
-          --color-clifford: #da373d;
-          --font-roboto:"Roboto", sans-serif;
-          --font-hindMadurai:"Hind Madurai", sans-serif;
-          --font-inter:"Inter", sans-serif;
-          --banner_bg:90deg, #013223 0%, #006747 49.99%, #013223 100%;
-          --shadow-header:0 1px 50px 0 rgba(181, 181, 181, 0.25);
-        }
-      </style>
+        --color-clifford: #da373d;
+        --font-roboto: 'Roboto', sans-serif;
+        --font-hindMadurai: 'Hind Madurai', sans-serif;
+        --font-inter: 'Inter', sans-serif;
+        --banner_bg: 90deg, #013223 0%, #006747 49.99%, #013223 100%;
+        --shadow-header: 0 1px 50px 0 rgba(181, 181, 181, 0.25);
+      }
+    </style>
 </head>
 
 <body>
   <header id="header">
     <!-- Navbar  -->
-    <section class=" py-7  bg-white shadow-header">
+    <section class="py-7 bg-white shadow-header">
       <div class="main w-11/12 mx-auto flex justify-between items-center">
         <div class="logo flex gap-2.5 items-center">
-          <img src="./images/logo.png" alt="company-logo" class="w-14 h-14">
-          <img src="./images/logo-ermargncy.png" alt="company-logo" class="w-[135px] h-12">
+          <img src="./images/logo.png" alt="company-logo" class="w-14 h-14" />
+          <img src="./images/logo-ermargncy.png" alt="company-logo" class="w-[135px] h-12" />
         </div>
         <!-- Button  -->
-        <div class="button flex gap-5 items-center ">
-
-          <div class="heart ">
+        <div class="button flex gap-5 items-center">
+          <div class="heart">
             <button type="button" id="heart-btn"
-              class=" px-3 py-3 w-[123px] h-[52px] bg-green-100 rounded-[50px] flex justify-center items-center gap-2.5"><span
-                class="font-inter text-base font-extrabold text-black">00</span>
-              <img src="./images/heart.png" alt="heart-shape" class="w-[20px] h-20px"></button>
+              class="px-3 py-3 w-[123px] h-[52px] bg-green-100 rounded-[50px] flex justify-center items-center gap-2.5">
+              <span class="font-inter text-base font-extrabold text-black">00</span>
+              <img src="./images/heart.png" alt="heart-shape" class="w-[20px] h-20px" />
+            </button>
           </div>
           <div class="coin">
             <button type="button " id="coin-btn"
-              class=" py-3 px-5 bg-green-100 rounded-[50px] flex justify-center items-center gap-2  "><span
-                class="font-inter text-base font-extrabold text-black">00</span>
-              <img src="./images/coin.png" alt="coin" class="w-6 h-6"></button>
-
+              class="py-3 px-5 bg-green-100 rounded-[50px] flex justify-center items-center gap-2">
+              <span class="font-inter text-base font-extrabold text-black">00</span>
+              <img src="./images/coin.png" alt="coin" class="w-6 h-6" />
+            </button>
           </div>
-          <button type="button" id="copy-btn" class="px-9 py-3 bg-green-600 rounded-[50px] font-inter text-base text-white leading-6 font-semibold
-          "><span>0</span>
+          <button type="button" id="copy-btn"
+            class="px-9 py-3 bg-green-600 rounded-[50px] font-inter text-base text-white leading-6 font-semibold">
+            <span>0</span>
             copy
           </button>
         </div>
-
       </div>
-
     </section>
 
     <section id="banner">
       <div class="bg-linear-(--banner_bg) py-3">
-        <div class="w-11/12 mx-auto  flex flex-col items-center gap-3">
-          <img src="./images/logo-dark.png" alt="company-logo" class="w-[92px] h-[92px]">
-          <h1 class="text-[40px] font-bold font-hindMadurai text-white">Emergency Service Directory</h1>
-          <p class="text-lg font-semibold text-white font-hindMadurai">Government Emergency Services at Your Fingertip –
-            Project by Government of the People’s Republic of Bangladesh</p>
+        <div class="w-11/12 mx-auto flex flex-col items-center gap-3">
+          <img src="./images/logo-dark.png" alt="company-logo" class="w-[92px] h-[92px]" />
+          <h1 class="text-[40px] font-bold font-hindMadurai text-white">
+            Emergency Service Directory
+          </h1>
+          <p class="text-lg font-semibold text-white font-hindMadurai">
+            Government Emergency Services at Your Fingertip – A Project by
+            Government of the People’s Republic of Bangladesh
+          </p>
         </div>
-
       </div>
-
-
     </section>
   </header>
   <main>
-    <section class=" bg-[#F5FFF6] pt-[48px] pb-[86px]">
+    <section class="bg-[#F5FFF6] pt-[48px] pb-[86px]">
       <div class="w-11/12 mx-auto grid grid-cols-12 gap-8">
-        <div class="  col-span-9">
+        <div class="col-span-9">
           <!-- card  -->
           <div class="grid grid-cols-3 gap-5">
             <!-- Emergency -->
@@ -90,25 +90,34 @@
               <!-- icon  -->
               <div class="flex justify-between items-center mb-4">
                 <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-xl flex items-center justify-center">
-                  <img src="./images/emergency.png" alt="emergency-icon" class="w-8 h-8">
+                  <img src="./images/emergency.png" alt="emergency-icon" class="w-8 h-8" />
                 </div>
-                <img src="./images/heart.png" alt="heart-icon" class="w-6 h-6">
+                <div class="w-5 h-5 text-[#5C5C5C]">
+                  <i class="fa-regular fa-heart w-full "></i>
+                </div>
+
               </div>
               <!-- content -->
-              <h2 class="font-bold text-2xl text-[#111] leading-8">National Emergency Number</h2>
-              <p class="text-[#5c5c5c] font-roboto text-base font-normal">National Emergency</p>
+              <h2 class="font-bold text-2xl text-[#111] leading-8">
+                National Emergency Number
+              </h2>
+              <p class="text-[#5c5c5c] font-roboto text-base font-normal">
+                National Emergency
+              </p>
               <span class="font-roboto font-bold text-3xl text-[#111] mt-4">999</span>
               <div class="w-fit py-1.5 px-4 bg-[#f2f2f2] rounded-full mt-2">
                 All
               </div>
               <!-- button  -->
-              <div class="flex justify-between gap-2 mt-6 ">
-                <button id="copy-button" onclick="copyNumber('999')"
-                  class="border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal"><i
-                    class="fa-solid fa-copy mr-2"></i>Copy</button>
-                <button id="card-button" onclick="callNumber('999')"
+              <div class="flex justify-between gap-2 mt-6">
+                <button type="button" id="copy-button" onclick="copyNumber('999')"
+                  class="border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal">
+                  <i class="fa-solid fa-copy mr-2"></i>Copy
+                </button>
+                <button type="button" id="card-button" onclick="callNumber('999')"
                   class="bg-green-600 text-white px-4 py-4 rounded-lg w-full text-base font-normal">
-                  <i class="fa-solid fa-phone mr-2"></i>Call</button>
+                  <i class="fa-solid fa-phone mr-2"></i>Call
+                </button>
               </div>
             </div>
             <!-- police -->
@@ -116,25 +125,33 @@
               <!-- icon  -->
               <div class="flex justify-between items-center mb-4">
                 <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-xl flex items-center justify-center">
-                  <img src="./images/police.png" alt="police" class="w-8 h-8">
+                  <img src="./images/police.png" alt="police" class="w-8 h-8" />
                 </div>
-                <img src="./images/heart.png" alt="heart-icon" class="w-6 h-6">
+                <div class="w-5 h-5 text-[#5C5C5C]">
+                  <i class="fa-regular fa-heart w-full "></i>
+                </div>
               </div>
               <!-- content -->
-              <h2 class="font-bold text-2xl text-[#111] leading-8">Police Helpline Number</h2>
-              <p class="text-[#5c5c5c] font-roboto text-base font-normal">Police</p>
+              <h2 class="font-bold text-2xl text-[#111] leading-8">
+                Police Helpline Number
+              </h2>
+              <p class="text-[#5c5c5c] font-roboto text-base font-normal">
+                Police
+              </p>
               <span class="font-roboto font-bold text-3xl text-[#111] mt-4">999</span>
               <div class="w-fit py-1.5 px-4 bg-[#f2f2f2] rounded-full mt-2">
                 Police
               </div>
               <!-- button  -->
-              <div class="flex justify-between gap-2 mt-6 ">
+              <div class="flex justify-between gap-2 mt-6">
                 <button id="copy-button" onclick="copyNumber('999')"
-                  class="border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal"><i
-                    class="fa-solid fa-copy mr-2"></i>Copy</button>
+                  class="border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal">
+                  <i class="fa-solid fa-copy mr-2"></i>Copy
+                </button>
                 <button id="card-button" onclick="callNumber('999')"
                   class="bg-green-600 text-white px-4 py-4 rounded-lg w-full text-base font-normal">
-                  <i class="fa-solid fa-phone mr-2"></i>Call</button>
+                  <i class="fa-solid fa-phone mr-2"></i>Call
+                </button>
               </div>
             </div>
             <!-- Fire Service  -->
@@ -143,25 +160,33 @@
               <!-- icon  -->
               <div class="flex justify-between items-center mb-4">
                 <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-xl flex items-center justify-center">
-                  <img src="./images/fire-service.png" alt="fire-service" class="w-8 h-8">
+                  <img src="./images/fire-service.png" alt="fire-service" class="w-8 h-8" />
                 </div>
-                <img src="./images/heart.png" alt="heart-icon" class="w-6 h-6">
+                <div class="w-5 h-5 text-[#5C5C5C]">
+                  <i class="fa-regular fa-heart w-full "></i>
+                </div>
               </div>
               <!-- content -->
-              <h2 class="font-bold text-2xl text-[#111] leading-8">Fire Service Number</h2>
-              <p class="text-[#5c5c5c] font-roboto text-base font-normal">Fire Service</p>
+              <h2 class="font-bold text-2xl text-[#111] leading-8">
+                Fire Service Number
+              </h2>
+              <p class="text-[#5c5c5c] font-roboto text-base font-normal">
+                Fire Service
+              </p>
               <span class="font-roboto font-bold text-3xl text-[#111] mt-4">999</span>
               <div class="w-fit py-1.5 px-4 bg-[#f2f2f2] rounded-full mt-2">
                 Fire
               </div>
               <!-- button  -->
-              <div class="flex justify-between gap-2 mt-6 ">
+              <div class="flex justify-between gap-2 mt-6">
                 <button id="copy-button" onclick="copyNumber('999')"
-                  class="border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal"><i
-                    class="fa-solid fa-copy mr-2"></i>Copy</button>
+                  class="border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal">
+                  <i class="fa-solid fa-copy mr-2"></i>Copy
+                </button>
                 <button id="card-button" onclick="callNumber('999')"
                   class="bg-green-600 text-white px-4 py-4 rounded-lg w-full text-base font-normal">
-                  <i class="fa-solid fa-phone mr-2"></i>Call</button>
+                  <i class="fa-solid fa-phone mr-2"></i>Call
+                </button>
               </div>
             </div>
             <!-- Ambulance  -->
@@ -170,25 +195,33 @@
               <!-- icon  -->
               <div class="flex justify-between items-center mb-4">
                 <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-xl flex items-center justify-center">
-                  <img src="./images/ambulance.png" alt="ambulance-icon" class="w-8 h-8">
+                  <img src="./images/ambulance.png" alt="ambulance-icon" class="w-8 h-8" />
                 </div>
-                <img src="./images/heart.png" alt="heart-icon" class="w-6 h-6">
+                <div class="w-5 h-5 text-[#5C5C5C]">
+                  <i class="fa-regular fa-heart w-full "></i>
+                </div>
               </div>
               <!-- content -->
-              <h2 class="font-bold text-2xl text-[#111] leading-8">Ambulance Service</h2>
-              <p class="text-[#5c5c5c] font-roboto text-base font-normal">Ambulance</p>
+              <h2 class="font-bold text-2xl text-[#111] leading-8">
+                Ambulance Service
+              </h2>
+              <p class="text-[#5c5c5c] font-roboto text-base font-normal">
+                Ambulance
+              </p>
               <span class="font-roboto font-bold text-3xl text-[#111] mt-4">1994-999999</span>
               <div class="w-fit py-1.5 px-4 bg-[#f2f2f2] rounded-full mt-2">
                 Health
               </div>
               <!-- button  -->
-              <div class="flex justify-between gap-2 mt-6 ">
+              <div class="flex justify-between gap-2 mt-6">
                 <button id="copy-button" onclick="copyNumber('999')"
-                  class="border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal"><i
-                    class="fa-solid fa-copy mr-2"></i>Copy</button>
+                  class="border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal">
+                  <i class="fa-solid fa-copy mr-2"></i>Copy
+                </button>
                 <button id="card-button" onclick="callNumber('999')"
                   class="bg-green-600 text-white px-4 py-4 rounded-lg w-full text-base font-normal">
-                  <i class="fa-solid fa-phone mr-2"></i>Call</button>
+                  <i class="fa-solid fa-phone mr-2"></i>Call
+                </button>
               </div>
             </div>
             <!-- Women & Child  -->
@@ -197,25 +230,33 @@
               <!-- icon  -->
               <div class="flex justify-between items-center mb-4">
                 <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-xl flex items-center justify-center">
-                  <img src="./images/emergency.png" alt="emergency-icon" class="w-8 h-8">
+                  <img src="./images/emergency.png" alt="emergency-icon" class="w-8 h-8" />
                 </div>
-                <img src="./images/heart.png" alt="heart-icon" class="w-6 h-6">
+                <div class="w-5 h-5 text-[#5C5C5C]">
+                  <i class="fa-regular fa-heart w-full "></i>
+                </div>
               </div>
               <!-- content -->
-              <h2 class="font-bold text-2xl text-[#111] leading-8">Women & Child Helpline</h2>
-              <p class="text-[#5c5c5c] font-roboto text-base font-normal">Women & Child Helpline</p>
+              <h2 class="font-bold text-2xl text-[#111] leading-8">
+                Women & Child Helpline
+              </h2>
+              <p class="text-[#5c5c5c] font-roboto text-base font-normal">
+                Women & Child Helpline
+              </p>
               <span class="font-roboto font-bold text-3xl text-[#111] mt-4">109</span>
               <div class="w-fit py-1.5 px-4 bg-[#f2f2f2] rounded-full mt-2">
                 Help
               </div>
               <!-- button  -->
-              <div class="flex justify-between gap-2 mt-6 ">
+              <div class="flex justify-between gap-2 mt-6">
                 <button id="copy-button" onclick="copyNumber('999')"
-                  class="border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal"><i
-                    class="fa-solid fa-copy mr-2"></i>Copy</button>
-                <button id="card-button" onclick="callNumber('999')"
+                  class="border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal">
+                  <i class="fa-solid fa-copy mr-2"></i>Copy
+                </button>
+                <button type="button" id="card-button" onclick="callNumber('999')"
                   class="bg-green-600 text-white px-4 py-4 rounded-lg w-full text-base font-normal">
-                  <i class="fa-solid fa-phone mr-2"></i>Call</button>
+                  <i class="fa-solid fa-phone mr-2"></i>Call
+                </button>
               </div>
             </div>
             <!-- Anti-Corruption  -->
@@ -224,25 +265,33 @@
               <!-- icon  -->
               <div class="flex justify-between items-center mb-4">
                 <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-xl flex items-center justify-center">
-                  <img src="./images/emergency.png" alt="emergency-icon" class="w-8 h-8">
+                  <img src="./images/emergency.png" alt="emergency-icon" class="w-8 h-8" />
                 </div>
-                <img src="./images/heart.png" alt="heart-icon" class="w-6 h-6">
+                <div class="w-5 h-5 text-[#5C5C5C]">
+                  <i class="fa-regular fa-heart w-full "></i>
+                </div>
               </div>
               <!-- content -->
-              <h2 class="font-bold text-2xl text-[#111] leading-8">Anti-Corruption Helpline</h2>
-              <p class="text-[#5c5c5c] font-roboto text-base font-normal">Anti-Corruption</p>
+              <h2 class="font-bold text-2xl text-[#111] leading-8">
+                Anti-Corruption Helpline
+              </h2>
+              <p class="text-[#5c5c5c] font-roboto text-base font-normal">
+                Anti-Corruption
+              </p>
               <span class="font-roboto font-bold text-3xl text-[#111] mt-4">106</span>
               <div class="w-fit py-1.5 px-4 bg-[#f2f2f2] rounded-full mt-2">
                 Govt.
               </div>
               <!-- button  -->
-              <div class="flex justify-between gap-2 mt-6 ">
+              <div class="flex justify-between gap-2 mt-6">
                 <button id="copy-button" onclick="copyNumber('999')"
-                  class="border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal"><i
-                    class="fa-solid fa-copy mr-2"></i>Copy</button>
+                  class="border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal">
+                  <i class="fa-solid fa-copy mr-2"></i>Copy
+                </button>
                 <button id="card-button" onclick="callNumber('999')"
                   class="bg-green-600 text-white px-4 py-4 rounded-lg w-full text-base font-normal">
-                  <i class="fa-solid fa-phone mr-2"></i>Call</button>
+                  <i class="fa-solid fa-phone mr-2"></i>Call
+                </button>
               </div>
             </div>
             <!-- Electricity  -->
@@ -251,54 +300,69 @@
               <!-- icon  -->
               <div class="flex justify-between items-center mb-4">
                 <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-xl flex items-center justify-center">
-                  <img src="./images/emergency.png" alt="emergency-icon" class="w-8 h-8">
+                  <img src="./images/emergency.png" alt="emergency-icon" class="w-8 h-8" />
                 </div>
-                <img src="./images/heart.png" alt="heart-icon" class="w-6 h-6">
+                <div class="w-5 h-5 text-[#5C5C5C]">
+                  <i class="fa-regular fa-heart w-full "></i>
+                </div>
               </div>
               <!-- content -->
-              <h2 class="font-bold text-2xl text-[#111] leading-8">Electricity Helpline</h2>
-              <p class="text-[#5c5c5c] font-roboto text-base font-normal">Electricity Outage</p>
+              <h2 class="font-bold text-2xl text-[#111] leading-8">
+                Electricity Helpline
+              </h2>
+              <p class="text-[#5c5c5c] font-roboto text-base font-normal">
+                Electricity Outage
+              </p>
               <span class="font-roboto font-bold text-3xl text-[#111] mt-4">16216</span>
               <div class="w-fit py-1.5 px-4 bg-[#f2f2f2] rounded-full mt-2">
                 Electricity
               </div>
               <!-- button  -->
-              <div class="flex justify-between gap-2 mt-6 ">
+              <div class="flex justify-between gap-2 mt-6">
                 <button id="copy-button" onclick="copyNumber('999')"
-                  class="border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal"><i
-                    class="fa-solid fa-copy mr-2"></i>Copy</button>
+                  class="border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal">
+                  <i class="fa-solid fa-copy mr-2"></i>Copy
+                </button>
                 <button id="card-button" onclick="callNumber('999')"
                   class="bg-green-600 text-white px-4 py-4 rounded-lg w-full text-base font-normal">
-                  <i class="fa-solid fa-phone mr-2"></i>Call</button>
+                  <i class="fa-solid fa-phone mr-2"></i>Call
+                </button>
               </div>
             </div>
 
             <!-- Brac -->
 
-
             <div class="bg-white shadow rounded-xl p-8 flex flex-col justify-between">
               <!-- icon  -->
               <div class="flex justify-between items-center mb-4">
                 <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-xl flex items-center justify-center">
-                  <img src="./images/emergency.png" alt="emergency-icon" class="w-8 h-8">
+                  <img src="./images/emergency.png" alt="emergency-icon" class="w-8 h-8" />
                 </div>
-                <img src="./images/heart.png" alt="heart-icon" class="w-6 h-6">
+                <div class="w-5 h-5 text-[#5C5C5C]">
+                  <i class="fa-regular fa-heart w-full "></i>
+                </div>
               </div>
               <!-- content -->
-              <h2 class="font-bold text-2xl text-[#111] leading-8">Brac Helpline</h2>
-              <p class="text-[#5c5c5c] font-roboto text-base font-normal">Brac</p>
+              <h2 class="font-bold text-2xl text-[#111] leading-8">
+                Brac Helpline
+              </h2>
+              <p class="text-[#5c5c5c] font-roboto text-base font-normal">
+                Brac
+              </p>
               <span class="font-roboto font-bold text-3xl text-[#111] mt-4">Brac</span>
               <div class="w-fit py-1.5 px-4 bg-[#f2f2f2] rounded-full mt-2">
                 NGO
               </div>
               <!-- button  -->
-              <div class="flex justify-between gap-2 mt-6 ">
+              <div class="flex justify-between gap-2 mt-6">
                 <button id="copy-button" onclick="copyNumber('999')"
-                  class="border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal"><i
-                    class="fa-solid fa-copy mr-2"></i>Copy</button>
+                  class="border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal">
+                  <i class="fa-solid fa-copy mr-2"></i>Copy
+                </button>
                 <button id="card-button" onclick="callNumber('999')"
                   class="bg-green-600 text-white px-4 py-4 rounded-lg w-full text-base font-normal">
-                  <i class="fa-solid fa-phone mr-2"></i>Call</button>
+                  <i class="fa-solid fa-phone mr-2"></i>Call
+                </button>
               </div>
             </div>
 
@@ -308,50 +372,54 @@
               <!-- icon  -->
               <div class="flex justify-between items-center mb-4">
                 <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-xl flex items-center justify-center">
-                  <img src="./images/emergency.png" alt="emergency-icon" class="w-8 h-8">
+                  <img src="./images/emergency.png" alt="emergency-icon" class="w-8 h-8" />
                 </div>
-                <img src="./images/heart.png" alt="heart-icon" class="w-6 h-6">
+                <div class="w-5 h-5 text-[#5C5C5C]">
+                  <i class="fa-regular fa-heart w-full "></i>
+                </div>
               </div>
               <!-- content -->
-              <h2 class="font-bold text-2xl text-[#111] leading-8">Bangladesh Railway Helpline</h2>
-              <p class="text-[#5c5c5c] font-roboto text-base font-normal">Bangladesh Railway</p>
+              <h2 class="font-bold text-2xl text-[#111] leading-8">
+                Bangladesh Railway Helpline
+              </h2>
+              <p class="text-[#5c5c5c] font-roboto text-base font-normal">
+                Bangladesh Railway
+              </p>
               <span class="font-roboto font-bold text-3xl text-[#111] mt-4">163</span>
               <div class="w-fit py-1.5 px-4 bg-[#f2f2f2] rounded-full mt-2">
                 Travel
               </div>
               <!-- button  -->
-              <div class="flex justify-between gap-2 mt-6 ">
-                <button id="copy-button" onclick="copyNumber('999')"
-                  class="border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal"><i
-                    class="fa-solid fa-copy mr-2"></i>Copy</button>
-                <button id="card-button" onclick="callNumber('999')"
+              <div class="flex justify-between gap-2 mt-6">
+                <button type="button" id="copy-button" onclick="copyNumber('999')"
+                  class="border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal">
+                  <i class="fa-solid fa-copy mr-2"></i>Copy
+                </button>
+                <button type="button" id="card-button" onclick="callNumber('999')"
                   class="bg-green-600 text-white px-4 py-4 rounded-lg w-full text-base font-normal">
-                  <i class="fa-solid fa-phone mr-2"></i>Call</button>
+                  <i class="fa-solid fa-phone mr-2"></i>Call
+                </button>
               </div>
             </div>
-
-
           </div>
-
         </div>
-        <aside class=" w-full col-span-3 bg-white p-6 rounded-xl">
+        <aside class="w-full col-span-3 bg-white p-6 rounded-xl">
           <div class="flex justify-between items-center">
-            <div class=" font-roboto font-medium text-lg text-[#111] "> <i
-                class="fa-regular fa-clock mr-2 text-gray-600"></i> Call
-              History</div>
+            <div class="font-roboto font-medium text-lg text-[#111]">
+              <i class="fa-regular fa-clock mr-2 text-gray-600"></i> Call
+              History
+            </div>
             <button type="button"
-              class="px-9 py-3 bg-green-600 rounded-[50px] font-inter font-semibold text-base text-white">Clear</button>
+              class="px-9 py-3 bg-green-600 rounded-[50px] font-inter font-semibold text-base text-white">
+              Clear
+            </button>
           </div>
-
+        </aside>
       </div>
-      </aside>
-
-      </div>
-
     </section>
-
   </main>
 
+  <script src="script.js"></script>
 </body>
 
 </html>
