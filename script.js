@@ -82,3 +82,7 @@ document.querySelectorAll('.call_button').forEach(function (btn) {
   });
 });
 
+// Clear the history
+function clearHistory() {
+  document.getElementById('call-history-list').innerHTML = '';
+}
