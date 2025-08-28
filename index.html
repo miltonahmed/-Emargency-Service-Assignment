@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Emergency-Service</title>
 
   <!-- font awesome link  -->
 
@@ -52,16 +52,16 @@
           </button>
 
           <!-- Coin Button -->
-          <button type="button" id="coin-btn"
+          <button type="button" id="coin_btn"
             class="px-4 py-2 bg-green-100 rounded-full flex justify-center items-center gap-2">
-            <span class="font-inter text-sm md:text-base font-extrabold text-black"></span>
+            <span class=" coins_count font-inter text-sm md:text-base font-extrabold text-black">100</span>
             <img src="./images/coin.png" alt="coin" class="w-5 h-5" />
           </button>
 
           <!-- Copy Button -->
-          <button type="button" id="copy-btn"
+          <button type="button" id="copy_btn"
             class="px-6 py-2 bg-green-600 rounded-full font-inter text-sm md:text-base text-white font-semibold flex items-center gap-2">
-            <span>0</span>
+            <span class="copy_count">0</span>
             <span>copy</span>
           </button>
         </div>
@@ -91,11 +91,8 @@
         <div class="lg:col-span-9 w-full">
           <!-- card  -->
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4  sm:px-4 md:px-0">
-
-
-
             <!-- Emergency -->
-            <div class="bg-white shadow rounded-xl p-8 flex flex-col justify-between">
+            <div class=" card bg-white shadow rounded-xl p-8 flex flex-col justify-between">
               <!-- icon  -->
               <div class="flex justify-between items-center mb-4">
                 <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-xl flex items-center justify-center">
@@ -106,29 +103,30 @@
                 </div>
               </div>
               <!-- content -->
-              <h2 class="font-bold text-2xl text-[#111] leading-8">
+              <h2 class=" title font-bold text-2xl text-[#111] leading-8">
                 National Emergency Number
               </h2>
-              <p class="text-[#5c5c5c] font-roboto text-base font-normal">
+              <p class="sub_title text-[#5c5c5c] font-roboto text-base font-normal">
                 National Emergency
               </p>
-              <span class="font-roboto font-bold text-3xl text-[#111] mt-4">999</span>
-              <div class="w-fit py-1.5 px-4 bg-[#f2f2f2] rounded-full mt-2">
+              <span class="number font-roboto font-bold text-3xl text-[#111] mt-4">999</span>
+              <div class="catagory w-fit py-1.5 px-4 bg-[#f2f2f2] rounded-full mt-2">
                 All
               </div>
               <!-- button  -->
               <div class="flex justify-between gap-2 mt-6">
                 <button type="button"
-                  class="border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal">
-                  <i class="fa-solid fa-copy mr-2 copy_icon"></i>Copy
+                  class=" copy_button_card border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal cursor-pointer">
+                  <i class="fa-solid fa-copy mr-2"></i>Copy
                 </button>
-                <button type="button" class="bg-green-600 text-white px-4 py-4 rounded-lg w-full text-base font-normal">
+                <button type="button"
+                  class=" call_button bg-green-600 text-white px-4 py-4 rounded-lg w-full text-base font-normal cursor-pointer">
                   <i class="fa-solid fa-phone mr-2 "></i>Call
                 </button>
               </div>
             </div>
             <!-- police -->
-            <div class="bg-white shadow rounded-xl p-8 flex flex-col justify-between">
+            <div class=" card bg-white shadow rounded-xl p-8 flex flex-col justify-between">
               <!-- icon  -->
               <div class="flex justify-between items-center mb-4">
                 <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-xl flex items-center justify-center">
@@ -139,31 +137,30 @@
                 </div>
               </div>
               <!-- content -->
-              <h2 class="font-bold text-2xl text-[#111] leading-8">
+              <h2 class=" title font-bold text-2xl text-[#111] leading-8">
                 Police Helpline Number
               </h2>
-              <p class="text-[#5c5c5c] font-roboto text-base font-normal">
+              <p class="sub_title text-[#5c5c5c] font-roboto text-base font-normal">
                 Police
               </p>
-              <span class="font-roboto font-bold text-3xl text-[#111] mt-4">999</span>
-              <div class="w-fit py-1.5 px-4 bg-[#f2f2f2] rounded-full mt-2">
+              <span class=" number font-roboto font-bold text-3xl text-[#111] mt-4">999</span>
+              <div class=" catagory w-fit py-1.5 px-4 bg-[#f2f2f2] rounded-full mt-2">
                 Police
               </div>
               <!-- button  -->
               <div class="flex justify-between gap-2 mt-6">
-                <button id="copy-button" onclick="copyNumber('999')"
-                  class="border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal">
+                <button
+                  class="copy_button_card border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal cursor-pointer ">
                   <i class="fa-solid fa-copy mr-2"></i>Copy
                 </button>
-                <button id="card-button" onclick="callNumber('999')"
-                  class="bg-green-600 text-white px-4 py-4 rounded-lg w-full text-base font-normal">
+                <button class="bg-green-600 text-white px-4 py-4 rounded-lg w-full text-base font-normal">
                   <i class="fa-solid fa-phone mr-2"></i>Call
                 </button>
               </div>
             </div>
             <!-- Fire Service  -->
 
-            <div class="bg-white shadow rounded-xl p-8 flex flex-col justify-between">
+            <div class="card bg-white shadow rounded-xl p-8 flex flex-col justify-between">
               <!-- icon  -->
               <div class="flex justify-between items-center mb-4">
                 <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-xl flex items-center justify-center">
@@ -174,31 +171,30 @@
                 </div>
               </div>
               <!-- content -->
-              <h2 class="font-bold text-2xl text-[#111] leading-8">
+              <h2 class=" title font-bold text-2xl text-[#111] leading-8">
                 Fire Service Number
               </h2>
-              <p class="text-[#5c5c5c] font-roboto text-base font-normal">
+              <p class=" sub_title text-[#5c5c5c] font-roboto text-base font-normal">
                 Fire Service
               </p>
-              <span class="font-roboto font-bold text-3xl text-[#111] mt-4">999</span>
-              <div class="w-fit py-1.5 px-4 bg-[#f2f2f2] rounded-full mt-2">
+              <span class=" number font-roboto font-bold text-3xl text-[#111] mt-4">999</span>
+              <div class=" catagory w-fit py-1.5 px-4 bg-[#f2f2f2] rounded-full mt-2">
                 Fire
               </div>
               <!-- button  -->
               <div class="flex justify-between gap-2 mt-6">
-                <button id="copy-button" onclick="copyNumber('999')"
-                  class="border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal">
-                  <i class="fa-solid fa-copy mr-2"></i>Copy
+                <button type="button"
+                  class=" copy_button_card border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal">
+                  <i class="fa-solid fa-copy mr-2 "></i>Copy
                 </button>
-                <button id="card-button" onclick="callNumber('999')"
-                  class="bg-green-600 text-white px-4 py-4 rounded-lg w-full text-base font-normal">
+                <button class=" call_button bg-green-600 text-white px-4 py-4 rounded-lg w-full text-base font-normal">
                   <i class="fa-solid fa-phone mr-2"></i>Call
                 </button>
               </div>
             </div>
             <!-- Ambulance  -->
 
-            <div class="bg-white shadow rounded-xl p-8 flex flex-col justify-between">
+            <div class="card bg-white shadow rounded-xl p-8 flex flex-col justify-between">
               <!-- icon  -->
               <div class="flex justify-between items-center mb-4">
                 <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-xl flex items-center justify-center">
@@ -209,31 +205,31 @@
                 </div>
               </div>
               <!-- content -->
-              <h2 class="font-bold text-2xl text-[#111] leading-8">
+              <h2 class=" title font-bold text-2xl text-[#111] leading-8">
                 Ambulance Service
               </h2>
-              <p class="text-[#5c5c5c] font-roboto text-base font-normal">
+              <p class=" sub_title text-[#5c5c5c] font-roboto text-base font-normal">
                 Ambulance
               </p>
-              <span class="font-roboto font-bold text-3xl text-[#111] mt-4">1994-999999</span>
-              <div class="w-fit py-1.5 px-4 bg-[#f2f2f2] rounded-full mt-2">
+              <span class=" number font-roboto font-bold text-3xl text-[#111] mt-4">1994-999999</span>
+              <div class=" catagory w-fit py-1.5 px-4 bg-[#f2f2f2] rounded-full mt-2">
                 Health
               </div>
               <!-- button  -->
               <div class="flex justify-between gap-2 mt-6">
-                <button id="copy-button" onclick="copyNumber('999')"
-                  class="border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal">
-                  <i class="fa-solid fa-copy mr-2"></i>Copy
+                <button type="button"
+                  class=" copy_button_card border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal cursor-pointer">
+                  <i class="fa-solid fa-copy mr-2 "></i>Copy
                 </button>
-                <button id="card-button" onclick="callNumber('999')"
-                  class="bg-green-600 text-white px-4 py-4 rounded-lg w-full text-base font-normal">
+                <button
+                  class="call_button bg-green-600 text-white px-4 py-4 rounded-lg w-full text-base font-normal cursor-pointer">
                   <i class="fa-solid fa-phone mr-2"></i>Call
                 </button>
               </div>
             </div>
             <!-- Women & Child  -->
 
-            <div class="bg-white shadow rounded-xl p-8 flex flex-col justify-between">
+            <div class=" card bg-white shadow rounded-xl p-8 flex flex-col justify-between">
               <!-- icon  -->
               <div class="flex justify-between items-center mb-4">
                 <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-xl flex items-center justify-center">
@@ -244,31 +240,31 @@
                 </div>
               </div>
               <!-- content -->
-              <h2 class="font-bold text-2xl text-[#111] leading-8">
+              <h2 class=" title font-bold text-2xl text-[#111] leading-8">
                 Women & Child Helpline
               </h2>
-              <p class="text-[#5c5c5c] font-roboto text-base font-normal">
+              <p class=" sub_title text-[#5c5c5c] font-roboto text-base font-normal">
                 Women & Child Helpline
               </p>
-              <span class="font-roboto font-bold text-3xl text-[#111] mt-4">109</span>
-              <div class="w-fit py-1.5 px-4 bg-[#f2f2f2] rounded-full mt-2">
+              <span class="number font-roboto font-bold text-3xl text-[#111] mt-4">109</span>
+              <div class=" catagory w-fit py-1.5 px-4 bg-[#f2f2f2] rounded-full mt-2">
                 Help
               </div>
               <!-- button  -->
               <div class="flex justify-between gap-2 mt-6">
-                <button id="copy-button" onclick="copyNumber('999')"
-                  class="border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal">
-                  <i class="fa-solid fa-copy mr-2"></i>Copy
+                <button type="button"
+                  class="copy_button_card border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal cursor-pointer ">
+                  <i class="fa-solid fa-copy mr-2 "></i>Copy
                 </button>
-                <button type="button" id="card-button" onclick="callNumber('999')"
-                  class="bg-green-600 text-white px-4 py-4 rounded-lg w-full text-base font-normal">
+                <button type="button"
+                  class="call_button bg-green-600 text-white px-4 py-4 rounded-lg w-full text-base font-normal cursor-pointer">
                   <i class="fa-solid fa-phone mr-2"></i>Call
                 </button>
               </div>
             </div>
             <!-- Anti-Corruption  -->
 
-            <div class="bg-white shadow rounded-xl p-8 flex flex-col justify-between">
+            <div class="card bg-white shadow rounded-xl p-8 flex flex-col justify-between">
               <!-- icon  -->
               <div class="flex justify-between items-center mb-4">
                 <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-xl flex items-center justify-center">
@@ -279,31 +275,30 @@
                 </div>
               </div>
               <!-- content -->
-              <h2 class="font-bold text-2xl text-[#111] leading-8">
+              <h2 class=" title font-bold text-2xl text-[#111] leading-8">
                 Anti-Corruption Helpline
               </h2>
-              <p class="text-[#5c5c5c] font-roboto text-base font-normal">
+              <p class=" sub_title text-[#5c5c5c] font-roboto text-base font-normal">
                 Anti-Corruption
               </p>
-              <span class="font-roboto font-bold text-3xl text-[#111] mt-4">106</span>
-              <div class="w-fit py-1.5 px-4 bg-[#f2f2f2] rounded-full mt-2">
+              <span class=" number font-roboto font-bold text-3xl text-[#111] mt-4">106</span>
+              <div class=" catagory w-fit py-1.5 px-4 bg-[#f2f2f2] rounded-full mt-2">
                 Govt.
               </div>
               <!-- button  -->
               <div class="flex justify-between gap-2 mt-6">
-                <button id="copy-button" onclick="copyNumber('999')"
-                  class="border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal">
+                <button type="button"
+                  class=" copy_button_card border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal">
                   <i class="fa-solid fa-copy mr-2"></i>Copy
                 </button>
-                <button id="card-button" onclick="callNumber('999')"
-                  class="bg-green-600 text-white px-4 py-4 rounded-lg w-full text-base font-normal">
+                <button class="call_button bg-green-600 text-white px-4 py-4 rounded-lg w-full text-base font-normal">
                   <i class="fa-solid fa-phone mr-2"></i>Call
                 </button>
               </div>
             </div>
             <!-- Electricity  -->
 
-            <div class="bg-white shadow rounded-xl p-8 flex flex-col justify-between">
+            <div class="card bg-white shadow rounded-xl p-8 flex flex-col justify-between">
               <!-- icon  -->
               <div class="flex justify-between items-center mb-4">
                 <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-xl flex items-center justify-center">
@@ -314,24 +309,23 @@
                 </div>
               </div>
               <!-- content -->
-              <h2 class="font-bold text-2xl text-[#111] leading-8">
+              <h2 class=" title font-bold text-2xl text-[#111] leading-8">
                 Electricity Helpline
               </h2>
-              <p class="text-[#5c5c5c] font-roboto text-base font-normal">
+              <p class=" sub_title text-[#5c5c5c] font-roboto text-base font-normal">
                 Electricity Outage
               </p>
-              <span class="font-roboto font-bold text-3xl text-[#111] mt-4">16216</span>
-              <div class="w-fit py-1.5 px-4 bg-[#f2f2f2] rounded-full mt-2">
+              <span class=" number font-roboto font-bold text-3xl text-[#111] mt-4">16216</span>
+              <div class=" catagory w-fit py-1.5 px-4 bg-[#f2f2f2] rounded-full mt-2">
                 Electricity
               </div>
               <!-- button  -->
               <div class="flex justify-between gap-2 mt-6">
-                <button id="copy-button" onclick="copyNumber('999')"
-                  class="border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal">
-                  <i class="fa-solid fa-copy mr-2"></i>Copy
+                <button type="button"
+                  class=" copy_button_card border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal">
+                  <i class="fa-solid fa-copy mr-2 "></i>Copy
                 </button>
-                <button id="card-button" onclick="callNumber('999')"
-                  class="bg-green-600 text-white px-4 py-4 rounded-lg w-full text-base font-normal">
+                <button class="call_button  bg-green-600 text-white px-4 py-4 rounded-lg w-full text-base font-normal">
                   <i class="fa-solid fa-phone mr-2"></i>Call
                 </button>
               </div>
@@ -339,7 +333,7 @@
 
             <!-- Brac -->
 
-            <div class="bg-white shadow rounded-xl p-8 flex flex-col justify-between">
+            <div class=" card bg-white shadow rounded-xl p-8 flex flex-col justify-between">
               <!-- icon  -->
               <div class="flex justify-between items-center mb-4">
                 <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-xl flex items-center justify-center">
@@ -350,24 +344,24 @@
                 </div>
               </div>
               <!-- content -->
-              <h2 class="font-bold text-2xl text-[#111] leading-8">
+              <h2 class="title  font-bold text-2xl text-[#111] leading-8">
                 Brac Helpline
               </h2>
-              <p class="text-[#5c5c5c] font-roboto text-base font-normal">
+              <p class="sub_title text-[#5c5c5c] font-roboto text-base font-normal">
                 Brac
               </p>
-              <span class="font-roboto font-bold text-3xl text-[#111] mt-4">Brac</span>
-              <div class="w-fit py-1.5 px-4 bg-[#f2f2f2] rounded-full mt-2">
+              <span class="number font-roboto font-bold text-3xl text-[#111] mt-4">16445</span>
+              <div class="catagory w-fit py-1.5 px-4 bg-[#f2f2f2] rounded-full mt-2">
                 NGO
               </div>
               <!-- button  -->
               <div class="flex justify-between gap-2 mt-6">
-                <button id="copy-button" onclick="copyNumber('999')"
-                  class="border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal">
-                  <i class="fa-solid fa-copy mr-2"></i>Copy
+                <button type="button"
+                  class="copy_button_card border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal cursor-pointer ">
+                  <i class="fa-solid fa-copy mr-2 copy_icon"></i>Copy
                 </button>
-                <button id="card-button" onclick="callNumber('999')"
-                  class="bg-green-600 text-white px-4 py-4 rounded-lg w-full text-base font-normal">
+                <button type="button"
+                  class="call_button bg-green-600 text-white px-4 py-4 rounded-lg w-full text-base font-normal cursor-pointer">
                   <i class="fa-solid fa-phone mr-2"></i>Call
                 </button>
               </div>
@@ -375,7 +369,7 @@
 
             <!-- Bangladesh Railway  -->
 
-            <div class="bg-white shadow rounded-xl p-8 flex flex-col justify-between">
+            <div class=" card bg-white shadow rounded-xl p-8 flex flex-col justify-between">
               <!-- icon  -->
               <div class="flex justify-between items-center mb-4">
                 <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-xl flex items-center justify-center">
@@ -386,24 +380,23 @@
                 </div>
               </div>
               <!-- content -->
-              <h2 class="font-bold text-2xl text-[#111] leading-8">
+              <h2 class=" title font-bold text-2xl text-[#111] leading-8">
                 Bangladesh Railway Helpline
               </h2>
-              <p class="text-[#5c5c5c] font-roboto text-base font-normal">
+              <p class="sub_title text-[#5c5c5c] font-roboto text-base font-normal">
                 Bangladesh Railway
               </p>
-              <span class="font-roboto font-bold text-3xl text-[#111] mt-4">163</span>
-              <div class="w-fit py-1.5 px-4 bg-[#f2f2f2] rounded-full mt-2">
+              <span class=" number font-roboto font-bold text-3xl text-[#111] mt-4">163</span>
+              <div class=" catagory w-fit py-1.5 px-4 bg-[#f2f2f2] rounded-full mt-2">
                 Travel
               </div>
               <!-- button  -->
               <div class="flex justify-between gap-2 mt-6">
-                <button type="button" id="copy-button" onclick="copyNumber('999')"
-                  class="border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal">
-                  <i class="fa-solid fa-copy mr-2"></i>Copy
+                <button type="button"
+                  class=" copy_button_card border border-[#D4D6D5] bg-white text-[#5c5c5c] px-4 py-4 rounded-lg w-full text-base font-normal">
+                  <i class="fa-solid fa-copy mr-2 copy_icon"></i>Copy
                 </button>
-                <button type="button" id="card-button" onclick="callNumber('999')"
-                  class="bg-green-600 text-white px-4 py-4 rounded-lg w-full text-base font-normal">
+                <button class="call_button bg-green-600 text-white px-4 py-4 rounded-lg w-full text-base font-normal">
                   <i class="fa-solid fa-phone mr-2"></i>Call
                 </button>
               </div>
@@ -411,16 +404,17 @@
           </div>
         </div>
         <aside class="lg:col-span-3 w-full mt-6 lg:mt-0 bg-white p-6 rounded-xl">
-          <div class="flex justify-between items-center">
+          <div class="flex justify-between items-center mb-2">
             <div class="font-roboto font-medium text-lg text-[#111]">
               <i class="fa-regular fa-clock mr-2 text-gray-600"></i> Call
               History
             </div>
-            <button type="button"
+            <button type="button" id="Clear_button" onclick="clearHistory()"
               class="px-9 py-3 bg-green-600 rounded-[50px] font-inter font-semibold text-base text-white">
               Clear
             </button>
           </div>
+          <ul id="call-history-list" class="space-y-2 text-sm"></ul>
         </aside>
       </div>
     </section>
